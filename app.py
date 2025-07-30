@@ -31,8 +31,8 @@ def recommend(movie):
 
 
 st.header('Movie Mentor')
-movies = pickle.load(open(r'f:\movie-recommender-system-tmdb-dataset-main\movie-recommender-system-tmdb-dataset\model\movie_list.pkl','rb'))
-similarity = pickle.load(open(r'f:\movie-recommender-system-tmdb-dataset-main\movie-recommender-system-tmdb-dataset\model\similarity.pkl','rb'))
+movies = pickle.load(open(r'movie_list.pkl','rb'))
+similarity = pickle.load(open(r'similarity.pkl','rb'))
 
 movie_list = movies['title'].values
 selected_movie = st.selectbox(
